@@ -26,10 +26,10 @@ var createNewTaskElement = function (taskString) {
 	//input (text)
 	var editInput = document.createElement("input"); //text
 	//button.edit
-	var editButton = document.createElement("button"); //edit button
+	// var editButton = document.createElement("button"); //edit button
 
-	//button.delete
-	var deleteButton = document.createElement("button"); //delete button
+	// //button.delete
+	// var deleteButton = document.createElement("button"); //delete button
 
 	label.innerText = taskString;
 
@@ -85,13 +85,13 @@ var editTask = function () {
 
 		//switch to .editmode
 		//label becomes the inputs value.
-		label.innerText = editInput.value;
-	} else {
-		editInput.value = label.innerText;
-	}
+	// 	label.innerText = editInput.value;
+	// } else {
+	// 	editInput.value = label.innerText;
+	// }
 
-	//toggle .editmode on the parent.
-	listItem.classList.toggle("editMode");
+	// //toggle .editmode on the parent.
+	// listItem.classList.toggle("editMode");
 }
 
 
